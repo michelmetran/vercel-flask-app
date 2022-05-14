@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-
+import numpy as np
 
 app = Flask(__name__)
 
@@ -17,7 +17,8 @@ def about():
 
 @app.route('/portfolio')
 def portfolio():
-    return 'Portfolio Page Route'
+    a = np.random.choice([1, 2, 3, 4, 5, 6])
+    return f'Portfolio {a} Page Route'
 
 
 @app.route('/contact')
