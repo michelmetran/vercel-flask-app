@@ -42,11 +42,15 @@ yarn global add vercel
 
 ----
 
-### *Deploy* via GitHub
+### *Deploy*
 
+Consegui fazer o deploy via *push* e também via comando ``vercel``.
+É necessário explicitar a localização do arquivo, usando um ```vercel.json``` com o seguinte conteúdo.
 
-
-
-
-
-
+```json
+{
+    "version": 2,
+    "builds": [{"src": "src/index.py", "use": "@vercel/python"}],
+    "routes": [{"src": "/(.*)", "dest": "src/index.py"}]
+}
+```
