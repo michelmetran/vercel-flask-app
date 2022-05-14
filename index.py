@@ -28,7 +28,7 @@ def contact():
 @app.route('/api')
 def api():
     with open(
-            os.path.join('data', 'data/data.json'),
+            os.path.join('..', 'data', 'data/data.json'),
             mode='r'
     ) as my_file:
         text = my_file.read()

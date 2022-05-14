@@ -37,3 +37,16 @@ Para instalar o Vercel CLI, usei o comando abaixo.
 ```
 yarn global add vercel
 ```
+
+<br>
+
+----
+
+### *Deploy* via GitHub
+
+
+
+
+
+
+
