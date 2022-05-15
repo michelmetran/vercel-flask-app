@@ -54,3 +54,7 @@ Consegui fazer o deploy via *push* e também via comando ``vercel``.
     "routes": [{"src": "/(.*)", "dest": "src/index.py"}]
 }
 ```
+
+
+Parei em 14.05.2022, as 21h00
+Error! Resource is limited - try again in 17 hours (more than 100, code: "api-deployments-free-per-day").
