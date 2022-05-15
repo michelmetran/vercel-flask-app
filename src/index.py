@@ -4,6 +4,7 @@ import numpy as np
 
 app = Flask(__name__)
 
+print(os.getcwd())
 
 @app.route('/')
 def home():
@@ -29,7 +30,7 @@ def contact():
 @app.route('/api')
 def api():
     with open(
-            os.path.join('..', 'data', 'data/data.json'),
+            os.path.join(os.getcwd(), 'data', 'data/data.json'),
             mode='r'
     ) as my_file:
         text = my_file.read()
@@ -37,7 +38,7 @@ def api():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    print(os.getcwd())
-    app.run(host='0.0.0.0', port=port)
+    #port = int(os.environ.get('PORT', 5000))
+    print(os.path.dirname(os.getcwd()))
+    #app.run(host='0.0.0.0', port=port)
 
