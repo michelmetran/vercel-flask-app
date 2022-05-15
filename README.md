@@ -3,7 +3,7 @@
 <br>
 
 Em maio de 2022 passei a estudar alternativas ao Heroku.
-Consegi fazer o deploy de uma aplicação Flask na Vercel
+Consegui fazer o *deploy* de uma aplicação Flask na Vercel
 
 - [How to deploy a Python/Flask App to Vercel ](https://dev.to/andrewbaisden/how-to-deploy-a-python-flask-app-to-vercel-2o5k)
 
