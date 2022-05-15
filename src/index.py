@@ -8,6 +8,7 @@ print(os.listdir(os.getcwd()))
 
 @app.route('/')
 def home():
+    print(os.listdir(os.getcwd()))
     return 'Home Page Route'
 
 
@@ -30,7 +31,7 @@ def contact():
 @app.route('/api')
 def api():
     with open(
-            os.path.join(os.getcwd(), 'data.json'),
+            os.path.join(os.getcwd(), 'data', 'data.json'),
             mode='r'
     ) as my_file:
         text = my_file.read()

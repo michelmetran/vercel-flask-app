@@ -51,7 +51,10 @@ Consegui fazer o deploy via *push* e também via comando ``vercel``.
 ```json
 {
     "version": 2,
-    "builds": [{"src": "src/index.py", "use": "@vercel/python"}],
+    "builds": [
+        {"src": "src/index.py", "use": "@vercel/python"},
+        {"src": "data/*.json", "use": "@vercel/static"}
+    ],
     "routes": [{"src": "/(.*)", "dest": "src/index.py"}]
 }
 ```
