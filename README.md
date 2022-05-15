@@ -32,6 +32,7 @@ sudo apt install npm
 npm --version
 ```
 
+<br>
 
 Para instalar o Vercel CLI, usei o comando abaixo.
 ```
