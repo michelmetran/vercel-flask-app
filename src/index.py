@@ -30,7 +30,7 @@ def contact():
 @app.route('/api')
 def api():
     with open(
-            os.path.join(os.getcwd(), 'data', 'data.json'),
+            os.path.join(os.getcwd(), '../data', 'data.json'),
             mode='r'
     ) as my_file:
         text = my_file.read()
@@ -39,6 +39,6 @@ def api():
 
 if __name__ == '__main__':
     #port = int(os.environ.get('PORT', 5000))
-    print(os.path.dirname(os.getcwd()))
+    print(os.getcwd())
     #app.run(host='0.0.0.0', port=port)
 
