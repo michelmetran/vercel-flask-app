@@ -1,7 +1,5 @@
 # Vercel
 
-<br>
-
 Em maio de 2022 passei a estudar alternativas ao Heroku.
 Consegui fazer o _deploy_ de uma aplicação Flask na Vercel
 
@@ -59,7 +57,6 @@ Consegui fazer o deploy via _push_ e também via comando `vercel`.
   "routes": [{ "src": "/(.*)", "dest": "src/index.py" }]
 }
 ```
-
 
 <br>
 
