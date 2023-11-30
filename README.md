@@ -32,6 +32,14 @@ npm --version
 
 <br>
 
+Se for no Windows, usar o
+
+```
+choco install nodejs
+```
+
+<br>
+
 Para instalar o Vercel CLI, usei o comando abaixo.
 
 ```

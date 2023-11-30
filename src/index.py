@@ -1,3 +1,11 @@
+"""
+Aplicação Flask
+
+Michel Metran
+Data: 30.11/2023
+"""
+
+
 import os
 from flask import Flask
 import numpy as np
@@ -5,6 +13,7 @@ import numpy as np
 app = Flask(__name__)
 
 print(os.listdir(os.getcwd()))
+
 
 @app.route('/')
 def home():
@@ -31,15 +40,13 @@ def contact():
 @app.route('/api')
 def api():
     with open(
-            os.path.join(os.getcwd(), 'data', 'data.json'),
-            mode='r'
+        os.path.join(os.getcwd(), 'data', 'data.json'), mode='r'
     ) as my_file:
         text = my_file.read()
         return text
 
 
 if __name__ == '__main__':
-    #port = int(os.environ.get('PORT', 5000))
+    # port = int(os.environ.get('PORT', 5000))
     print(os.getcwd())
-    #app.run(host='0.0.0.0', port=port)
-
+    # app.run(host='0.0.0.0', port=port)
